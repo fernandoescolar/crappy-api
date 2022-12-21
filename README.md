@@ -20,6 +20,18 @@ This endpoint will allocate the specified number of kilobytes of memory and keep
 
 This endpoint will release the specified number of kilobytes of memory that was previously allocated using the `GET memory/{kilobytes}` endpoint.
 
+### GET deadlock
+
+**Warning: This endpoint cause a deadlock, which may make the application or system unresponsive. Use with caution.**
+
+This endpoint will cause the application to enter a deadlock state.
+
+### GET stackoverflow
+
+**Warning: This endpoint can cause a stack overflow, which may make the application or system unresponsive. Use with caution.**
+
+This endpoint will cause a stack overflow error to occur.
+
 ## Usage
 
 To use the Crappy API, clone the repository and run the API using the dotnet command.
