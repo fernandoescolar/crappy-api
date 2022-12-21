@@ -19,3 +19,7 @@ To safely test the Crappy API, it is recommended to use a virtual machine or a t
 ## Disclaimer
 
 The Crappy API is provided as-is, without any warranties or guarantees. Use at your own risk.
+
+## License
+
+The Crappy API is licensed under the [MIT license](LICENSE).
