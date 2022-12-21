@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrappyApi", "src\CrappyApi.csproj", "{EBEE69F8-79E1-4B64-B497-809D0E9B0A0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBEE69F8-79E1-4B64-B497-809D0E9B0A0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBEE69F8-79E1-4B64-B497-809D0E9B0A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBEE69F8-79E1-4B64-B497-809D0E9B0A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBEE69F8-79E1-4B64-B497-809D0E9B0A0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
