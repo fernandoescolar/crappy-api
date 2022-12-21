@@ -42,6 +42,12 @@ cd crappy-api
 dotnet run
 ```
 
+Or you can use the Docker image.
+
+```bash
+docker run -p 5000:80 ghcr.io/fernandoescolar/crappy-api:latest
+```
+
 ## Testing
 To safely test the Crappy API, it is recommended to use a virtual machine or a test environment with limited resources. Do not use the Crappy API on a production system or a system with important data, as it may cause harm to the system.
 
