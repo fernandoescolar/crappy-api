@@ -26,12 +26,20 @@ app.MapGet("/", () => "Welcome to crappy API!");
 
 app.MapGet("cpu/{milliseconds}", (int milliseconds, CancellationToken cancellationToken) =>
 {
-    var sw = new Stopwatch();
-    sw.Start();
-    while (sw.ElapsedMilliseconds < milliseconds)
+    Parallel.For(0, Environment.ProcessorCount, _ =>
     {
-        cancellationToken.ThrowIfCancellationRequested();
-    }
+        var sw = new Stopwatch();
+        sw.Start();
+        while(true)
+        {
+            cancellationToken.ThrowIfCancellationRequested();
+            if (sw.ElapsedMilliseconds >= milliseconds)
+            {
+                sw.Stop();
+                break;
+            }
+        }
+    });
 
     return Results.Ok();
 });

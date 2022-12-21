@@ -4,14 +4,31 @@
 
 This API is a test API that has been designed to demonstrate and test the effects of various types of issues on a system. It is not intended for use in production environments, and using it may cause harm to the system it is running on.
 
+## Endpoints
+
+The Crappy API has the following endpoints:
+
+### GET cpu/{milliseconds}
+
+This endpoint will cause the CPU to be maxed out for the specified number of milliseconds.
+
+### GET memory/{kilobytes}
+
+This endpoint will allocate the specified number of kilobytes of memory and keep it allocated until the memory is manually released or the process is terminated.
+
+### DELETE memory/{kilobytes}
+
+This endpoint will release the specified number of kilobytes of memory that was previously allocated using the `GET memory/{kilobytes}` endpoint.
+
 ## Usage
 
 To use the Crappy API, clone the repository and run the API using the dotnet command.
 
-Copy code
+```bash
 git clone https://github.com/fernandoescolar/crappy-api.git
 cd crappy-api
 dotnet run
+```
 
 ## Testing
 To safely test the Crappy API, it is recommended to use a virtual machine or a test environment with limited resources. Do not use the Crappy API on a production system or a system with important data, as it may cause harm to the system.
