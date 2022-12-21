@@ -33,7 +33,7 @@ dotnet run
 ## Testing
 To safely test the Crappy API, it is recommended to use a virtual machine or a test environment with limited resources. Do not use the Crappy API on a production system or a system with important data, as it may cause harm to the system.
 
-## Disclaimer
+## Disclaimer
 
 The Crappy API is provided as-is, without any warranties or guarantees. Use at your own risk.
 
