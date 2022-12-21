@@ -1,6 +1,4 @@
 FROM mcr.microsoft.com/dotnet/aspnet:7.0-alpine3.17 AS base
-EXPOSE 8080
-ENV ASPNETCORE_URLS=http://*:8080
 ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
